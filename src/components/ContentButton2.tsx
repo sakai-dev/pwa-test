@@ -6,13 +6,13 @@ export default function ContentButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate("/img-viewer");
+        navigate("/iframe-viewer");
     }
 
     return (
         <div className={"content-button"}>
             <div className={"app-icon"} onClick={handleClick}></div>
-            Img
+            Iframe
         </div>
     )
 }

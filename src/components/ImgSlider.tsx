@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide,} from "swiper/react";
 import {Pagination} from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/pagination";
-import "./MagazineViewer.scss";
+import "./Slider.scss";
 
 const slides: string[] = [
     " https://http.cat/100",
@@ -21,7 +21,7 @@ const slides: string[] = [
     " https://http.cat/208",
 ];
 
-export default function MagazineViewer() {
+export default function ImgSlider() {
     return (
         <Swiper
             pagination={{type: 'fraction'}}
