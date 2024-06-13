@@ -6,13 +6,13 @@ export default function ContentButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate("/car-magazine");
+        navigate("/magazine");
     }
 
     return (
         <div className={"content-button"}>
             <div className={"app-icon"} onClick={handleClick}></div>
-            カーマガジン
+            マガジン
         </div>
     )
 }

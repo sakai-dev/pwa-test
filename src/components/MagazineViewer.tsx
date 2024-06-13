@@ -19,7 +19,6 @@ const slides: string[] = [
     " https://http.cat/206",
     " https://http.cat/207",
     " https://http.cat/208",
-    " https://http.cat/404",
 ];
 
 export default function MagazineViewer() {
