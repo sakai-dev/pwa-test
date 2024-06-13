@@ -1,0 +1,30 @@
+.App {
+  .Link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    margin-left: 20px;
+    margin-top: 10px;
+
+    a:nth-child(n+2) {
+      margin-left: 15px;
+    }
+  }
+
+  .NetworkStatus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 55px;
+  }
+}
