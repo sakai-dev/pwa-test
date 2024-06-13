@@ -2,6 +2,7 @@
   "name": "pwa-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sakai-dev.github.io/pwa-test/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +12,7 @@
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "axios": "^1.6.8",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
@@ -37,7 +39,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-sw": "http-server ./build"
+    "start-sw": "http-server ./build",
+    "preghpages": "yarn build",
+    "ghpages": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
