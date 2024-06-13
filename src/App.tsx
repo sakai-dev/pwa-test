@@ -9,7 +9,7 @@ import useOffline from "./hooks/useOffline";
 export default function App() {
     const {isOffline} = useOffline()
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/pwa-test'>
             <div className="App">
                 <div className="Link">
                     <Link to={"/"}>/</Link>

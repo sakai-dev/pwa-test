@@ -6,20 +6,20 @@ import "swiper/scss/pagination";
 import "./MagazineViewer.scss";
 
 const slides: string[] = [
-    " https://http.cat/100.png",
-    " https://http.cat/101.png",
-    " https://http.cat/102.png",
-    " https://http.cat/103.png",
-    " https://http.cat/200.png",
-    " https://http.cat/201.png",
-    " https://http.cat/202.png",
-    " https://http.cat/203.png",
-    " https://http.cat/204.png",
-    " https://http.cat/205.png",
-    " https://http.cat/206.png",
-    " https://http.cat/207.png",
-    " https://http.cat/208.png",
-    " https://http.cat/404.png",
+    " https://http.cat/100",
+    " https://http.cat/101",
+    " https://http.cat/102",
+    " https://http.cat/103",
+    " https://http.cat/200",
+    " https://http.cat/201",
+    " https://http.cat/202",
+    " https://http.cat/203",
+    " https://http.cat/204",
+    " https://http.cat/205",
+    " https://http.cat/206",
+    " https://http.cat/207",
+    " https://http.cat/208",
+    " https://http.cat/404",
 ];
 
 export default function MagazineViewer() {
