@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes, useLocation } from "react-router-dom";
 import Root from "./pages/Root";
 import Top from "./pages/Top"
 import ImgViewer from "./pages/ImgViewer";
 import IframeViewer from './pages/IframeViewer';
 import useOffline from "./hooks/useOffline";
-import ReactGA from "react-ga4";
 
 export default function App() {
-    const {isOffline} = useOffline()
-    ReactGA.initialize("G-52YM9YRQXY");
+    // const { isOffline } = useOffline()
 
     return (
         <BrowserRouter basename='/pwa-test'>
@@ -25,10 +23,10 @@ export default function App() {
                     ネットワーク：{isOffline ? "OFFLINE" : "ONLINE"}
                 </div> */}
                 <Routes>
-                    <Route path={"/"} element={<Root/>}/>
-                    <Route path={"/top"} element={<Top/>}/>
-                    <Route path={"/img-viewer"} element={<ImgViewer/>}/>
-                    <Route path={"/iframe-viewer"} element={<IframeViewer/>}/>
+                    <Route path={"/"} element={<Root />} />
+                    <Route path={"/top"} element={<Top />} />
+                    <Route path={"/img-viewer"} element={<ImgViewer />} />
+                    <Route path={"/iframe-viewer"} element={<IframeViewer />} />
                 </Routes>
             </div>
         </BrowserRouter>

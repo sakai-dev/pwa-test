@@ -4,6 +4,9 @@ import './index.scss';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize("G-52YM9YRQXY");
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

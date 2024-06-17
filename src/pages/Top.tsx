@@ -5,7 +5,6 @@ import ContentButton2 from "../components/ContentButton2";
 import ReactGA from "react-ga4";
 
 export default function Top() {
-    ReactGA.send({hitType: "pageview", page: "/top"});
 
     return (
         <div>
