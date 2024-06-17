@@ -6,9 +6,12 @@ import Top from "./pages/Top"
 import ImgViewer from "./pages/ImgViewer";
 import IframeViewer from './pages/IframeViewer';
 import useOffline from "./hooks/useOffline";
+import ReactGA from "react-ga4";
 
 export default function App() {
     const {isOffline} = useOffline()
+    ReactGA.initialize("G-52YM9YRQXY");
+
     return (
         <BrowserRouter basename='/pwa-test'>
             <div className="App">
